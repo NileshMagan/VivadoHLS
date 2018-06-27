@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcvu9p-flga2104-2L-e" LaunchTime="1530006718">
+  <File Type="PA-TCL" Name="accumulator_block_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="accumulator_block_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="accumulator_block_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="accumulator_block_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="accumulator_block_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="accumulator_block_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="accumulator_block_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="accumulator_block_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="accumulator_block_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/accumulator_block/accumulator_block.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/accumulator_block/hdl/accumulator_block_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="accumulator_block_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_microblaze_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_microblaze_0_axi_intc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_microblaze_0_xlconcat_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_rst_clk_wiz_1_100M_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_mdm_1_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_clk_wiz_1_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_hls_macc_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_dlmb_v10_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_ilmb_v10_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_dlmb_bram_if_cntlr_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_ilmb_bram_if_cntlr_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_lmb_bram_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="accumulator_block_axi_uart16550_0_0"/>
+</GenRun>

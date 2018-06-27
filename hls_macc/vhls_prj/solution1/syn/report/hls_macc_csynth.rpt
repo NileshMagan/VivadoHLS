@@ -1,0 +1,149 @@
+
+
+================================================================
+== Vivado HLS Report for 'hls_macc'
+================================================================
+* Date:           Tue Jun 26 11:37:54 2018
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        vhls_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.17|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    2|    2|    2|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+---------+---------+-----+
+|       Name      | BRAM_18K| DSP48E|    FF   |   LUT   | URAM|
++-----------------+---------+-------+---------+---------+-----+
+|DSP              |        -|      -|        -|        -|    -|
+|Expression       |        -|      3|        0|       91|    -|
+|FIFO             |        -|      -|        -|        -|    -|
+|Instance         |        0|      -|      157|      234|    -|
+|Memory           |        -|      -|        -|        -|    -|
+|Multiplexer      |        -|      -|        -|       21|    -|
+|Register         |        -|      -|      132|        -|    -|
++-----------------+---------+-------+---------+---------+-----+
+|Total            |        0|      3|      289|      346|    0|
++-----------------+---------+-------+---------+---------+-----+
+|Available        |     4320|   6840|  2364480|  1182240|  960|
++-----------------+---------+-------+---------+---------+-----+
+|Utilization (%)  |        0|   ~0  |    ~0   |    ~0   |    0|
++-----------------+---------+-------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------+------------------------------------+---------+-------+-----+-----+
+    |               Instance               |               Module               | BRAM_18K| DSP48E|  FF | LUT |
+    +--------------------------------------+------------------------------------+---------+-------+-----+-----+
+    |hls_macc_HLS_MACC_PERIPH_BUS_s_axi_U  |hls_macc_HLS_MACC_PERIPH_BUS_s_axi  |        0|      0|  157|  234|
+    +--------------------------------------+------------------------------------+---------+-------+-----+-----+
+    |Total                                 |                                    |        0|      0|  157|  234|
+    +--------------------------------------+------------------------------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |tmp_1_fu_57_p2           |     *    |      3|  0|  20|          32|          32|
+    |accum                    |     +    |      0|  0|  39|          32|          32|
+    |p_acc_reg_load_fu_65_p3  |  select  |      0|  0|  32|           1|           1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |Total                    |          |      3|  0|  91|          65|          65|
+    +-------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  21|          4|    1|          4|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  21|          4|    1|          4|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+----+----+-----+-----------+
+    |          Name         | FF | LUT| Bits| Const Bits|
+    +-----------------------+----+----+-----+-----------+
+    |a_read_reg_94          |  32|   0|   32|          0|
+    |acc_reg                |  32|   0|   32|          0|
+    |accum_clr_read_reg_84  |   1|   0|    1|          0|
+    |ap_CS_fsm              |   3|   0|    3|          0|
+    |b_read_reg_89          |  32|   0|   32|          0|
+    |tmp_1_reg_99           |  32|   0|   32|          0|
+    +-----------------------+----+----+-----+-----------+
+    |Total                  | 132|   0|  132|          0|
+    +-----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------+-----+-----+------------+---------------------+--------------+
+|             RTL Ports             | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++-----------------------------------+-----+-----+------------+---------------------+--------------+
+|s_axi_HLS_MACC_PERIPH_BUS_AWVALID  |  in |    1|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_AWREADY  | out |    1|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_AWADDR   |  in |    6|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_WVALID   |  in |    1|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_WREADY   | out |    1|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_WDATA    |  in |   32|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_WSTRB    |  in |    4|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_ARVALID  |  in |    1|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_ARREADY  | out |    1|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_ARADDR   |  in |    6|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_RVALID   | out |    1|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_RREADY   |  in |    1|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_RDATA    | out |   32|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_RRESP    | out |    2|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_BVALID   | out |    1|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_BREADY   |  in |    1|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|s_axi_HLS_MACC_PERIPH_BUS_BRESP    | out |    2|    s_axi   | HLS_MACC_PERIPH_BUS |    scalar    |
+|ap_clk                             |  in |    1| ap_ctrl_hs |       hls_macc      | return value |
+|ap_rst_n                           |  in |    1| ap_ctrl_hs |       hls_macc      | return value |
+|interrupt                          | out |    1| ap_ctrl_hs |       hls_macc      | return value |
++-----------------------------------+-----+-----+------------+---------------------+--------------+
+

@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jun 26 14:51:43 2018
+# Process ID: 13896
+# Current directory: C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5676 C:\Users\niles\Documents\VivadoProjects\accumulate\accumulate\accumulate.xpr
+# Log file: C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/vivado.log
+# Journal file: C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd}
+generate_target all [get_files  C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd]
+catch { config_ip_cache -export [get_ips -all accumulator_block_microblaze_0_axi_intc_1] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_microblaze_0_xlconcat_1] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_mdm_1_3] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_clk_wiz_1_3] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_rst_clk_wiz_1_100M_3] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_hls_macc_0_2] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_xbar_1] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_dlmb_v10_3] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_ilmb_v10_3] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_dlmb_bram_if_cntlr_3] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_ilmb_bram_if_cntlr_3] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_lmb_bram_3] }
+export_ip_user_files -of_objects [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd]
+launch_runs -jobs 2 {accumulator_block_microblaze_0_axi_intc_1_synth_1 accumulator_block_microblaze_0_xlconcat_1_synth_1 accumulator_block_mdm_1_3_synth_1 accumulator_block_clk_wiz_1_3_synth_1 accumulator_block_rst_clk_wiz_1_100M_3_synth_1 accumulator_block_hls_macc_0_2_synth_1 accumulator_block_xbar_1_synth_1 accumulator_block_dlmb_v10_3_synth_1 accumulator_block_ilmb_v10_3_synth_1 accumulator_block_dlmb_bram_if_cntlr_3_synth_1 accumulator_block_ilmb_bram_if_cntlr_3_synth_1 accumulator_block_lmb_bram_3_synth_1}
+export_simulation -of_objects [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -directory C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files -ipstatic_source_dir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/modelsim} {questa=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/questa} {riviera=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/riviera} {activehdl=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -top
+add_files -norecurse C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/hdl/accumulator_block_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_bd_design {C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd}
+open_bd_design {C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd}
+open_run impl_1
+file mkdir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.sdk
+file copy -force C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/impl_1/accumulator_block_wrapper.sysdef C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.sdk/accumulator_block_wrapper.hdf
+
+launch_sdk -workspace C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.sdk -hwspec C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.sdk/accumulator_block_wrapper.hdf
+open_bd_design {C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uart16550:2.0 axi_uart16550_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_uart16550_0/S_AXI} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_uart16550_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "rs232_uart ( UART ) " }  [get_bd_intf_pins axi_uart16550_0/UART]
+endgroup
+connect_bd_net [get_bd_pins axi_uart16550_0/ip2intc_irpt] [get_bd_pins microblaze_0_xlconcat/In1]
+save_bd_design
+validate_bd_design
+generate_target all [get_files  C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd]
+catch { config_ip_cache -export [get_ips -all accumulator_block_microblaze_0_axi_intc_1] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_xbar_1] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_axi_uart16550_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd]
+launch_runs -jobs 2 {accumulator_block_microblaze_0_axi_intc_1_synth_1 accumulator_block_xbar_1_synth_1 accumulator_block_axi_uart16550_0_0_synth_1}
+export_simulation -of_objects [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -directory C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files -ipstatic_source_dir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/modelsim} {questa=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/questa} {riviera=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/riviera} {activehdl=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd}
+validate_bd_design -force
+save_bd_design
+generate_target all [get_files  C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd]
+catch { config_ip_cache -export [get_ips -all accumulator_block_microblaze_0_axi_intc_1] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_xbar_1] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_axi_uart16550_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd]
+launch_runs -jobs 2 {accumulator_block_microblaze_0_axi_intc_1_synth_1 accumulator_block_xbar_1_synth_1 accumulator_block_axi_uart16550_0_0_synth_1}
+export_simulation -of_objects [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -directory C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files -ipstatic_source_dir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/modelsim} {questa=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/questa} {riviera=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/riviera} {activehdl=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd}
+open_bd_design {C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd}
+open_bd_design {C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd}
+generate_target all [get_files  C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd]
+catch { config_ip_cache -export [get_ips -all accumulator_block_microblaze_0_axi_intc_1] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_xbar_1] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_axi_uart16550_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd]
+launch_runs -jobs 2 {accumulator_block_microblaze_0_axi_intc_1_synth_1 accumulator_block_xbar_1_synth_1 accumulator_block_axi_uart16550_0_0_synth_1}
+export_simulation -of_objects [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -directory C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files -ipstatic_source_dir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/modelsim} {questa=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/questa} {riviera=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/riviera} {activehdl=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd]
+catch { config_ip_cache -export [get_ips -all accumulator_block_microblaze_0_axi_intc_1] }
+catch { config_ip_cache -export [get_ips -all accumulator_block_xbar_1] }
+export_ip_user_files -of_objects [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd]
+launch_runs -jobs 2 {accumulator_block_microblaze_0_axi_intc_1_synth_1 accumulator_block_xbar_1_synth_1}
+export_simulation -of_objects [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -directory C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files -ipstatic_source_dir C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/modelsim} {questa=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/questa} {riviera=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/riviera} {activehdl=C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file copy -force C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/impl_1/accumulator_block_wrapper.sysdef C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.sdk/accumulator_block_wrapper.hdf
+
+launch_sdk -workspace C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.sdk -hwspec C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.sdk/accumulator_block_wrapper.hdf
+launch_sdk -workspace C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.sdk -hwspec C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.sdk/accumulator_block_wrapper.hdf
+open_bd_design {C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/accumulator_block.bd}

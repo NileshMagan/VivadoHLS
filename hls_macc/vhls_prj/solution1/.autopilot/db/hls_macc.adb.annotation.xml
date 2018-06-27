@@ -1,0 +1,7 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="20" filename="hls_macc.c" linenumber="12" name="p_acc_reg_load" contextFuncName="hls_macc" moduleName="hls_macc" rtlName="p_acc_reg_load_fu_65_p3" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="32" fileDirectory="C:\Users\niles\Downloads\Uni\PartIV\DesignFiles\Vivado_HLS_Tutorial\Using_IP_with_Zynq\accumulate\hls_macc"></item>
+<item  id="21" filename="hls_macc.c" linenumber="14" name="tmp_1" contextFuncName="hls_macc" moduleName="hls_macc" rtlName="tmp_1_fu_57_p2" latency="0" BRAM="-1" DSP="3" FF="0" LUT="20" fileDirectory="C:\Users\niles\Downloads\Uni\PartIV\DesignFiles\Vivado_HLS_Tutorial\Using_IP_with_Zynq\accumulate\hls_macc"></item>
+<item  id="22" filename="hls_macc.c" linenumber="14" name="tmp_2" contextFuncName="hls_macc" moduleName="hls_macc" rtlName="tmp_2_fu_72_p2" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\niles\Downloads\Uni\PartIV\DesignFiles\Vivado_HLS_Tutorial\Using_IP_with_Zynq\accumulate\hls_macc"></item>
+</annotationInfo>
+</annotationInfo>

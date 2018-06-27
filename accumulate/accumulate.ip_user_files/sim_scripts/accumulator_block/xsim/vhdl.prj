@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"../../../bd/accumulator_block/ip/accumulator_block_microblaze_0_1/sim/accumulator_block_microblaze_0_1.vhd" \
+"../../../bd/accumulator_block/ip/accumulator_block_microblaze_0_axi_intc_1/sim/accumulator_block_microblaze_0_axi_intc_1.vhd" \
+"../../../bd/accumulator_block/ip/accumulator_block_mdm_1_3/sim/accumulator_block_mdm_1_3.vhd" \
+"../../../bd/accumulator_block/ip/accumulator_block_rst_clk_wiz_1_100M_3/sim/accumulator_block_rst_clk_wiz_1_100M_3.vhd" \
+"../../../bd/accumulator_block/ip/accumulator_block_dlmb_v10_3/sim/accumulator_block_dlmb_v10_3.vhd" \
+"../../../bd/accumulator_block/ip/accumulator_block_ilmb_v10_3/sim/accumulator_block_ilmb_v10_3.vhd" \
+"../../../bd/accumulator_block/ip/accumulator_block_dlmb_bram_if_cntlr_3/sim/accumulator_block_dlmb_bram_if_cntlr_3.vhd" \
+"../../../bd/accumulator_block/ip/accumulator_block_ilmb_bram_if_cntlr_3/sim/accumulator_block_ilmb_bram_if_cntlr_3.vhd" \
+"../../../bd/accumulator_block/ip/accumulator_block_axi_uart16550_0_0/sim/accumulator_block_axi_uart16550_0_0.vhd" \
+
+nosort

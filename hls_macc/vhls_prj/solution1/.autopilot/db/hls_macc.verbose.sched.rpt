@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vivado HLS Report for 'hls_macc'
+================================================================
+* Date:           Tue Jun 26 11:37:54 2018
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        vhls_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.17|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    2|    2|    2|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+
+* FSM state operations: 
+
+ <State 1> : 1.00ns
+ST_1 : Operation 4 [1/1] (1.00ns)   --->   "%accum_clr_read = call i1 @_ssdm_op_Read.s_axilite.i1(i1 %accum_clr) nounwind"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 5 [1/1] (1.00ns)   --->   "%b_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %b) nounwind"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 6 [1/1] (1.00ns)   --->   "%a_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %a) nounwind"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+
+ <State 2> : 3.17ns
+ST_2 : Operation 7 [1/1] (3.17ns)   --->   "%tmp_1 = mul nsw i32 %b_read, %a_read" [hls_macc.c:14]   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 3> : 1.88ns
+ST_3 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %a) nounwind, !map !7"
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %b) nounwind, !map !13"
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %accum) nounwind, !map !17"
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %accum_clr) nounwind, !map !23"
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @hls_macc_str) nounwind"
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [20 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [hls_macc.c:5]
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %a, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [20 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [hls_macc.c:6]
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %b, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [20 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [hls_macc.c:7]
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %accum, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [20 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [hls_macc.c:8]
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %accum_clr, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [20 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [hls_macc.c:9]
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%acc_reg_load = load i32* @acc_reg, align 4" [hls_macc.c:14]
+ST_3 : Operation 19 [1/1] (0.00ns) (grouped into LUT with out node tmp_2)   --->   "%p_acc_reg_load = select i1 %accum_clr_read, i32 0, i32 %acc_reg_load" [hls_macc.c:12]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 20 [1/1] (0.88ns) (out node of the LUT)   --->   "%tmp_2 = add nsw i32 %p_acc_reg_load, %tmp_1" [hls_macc.c:14]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 21 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i32P(i32* %accum, i32 %tmp_2) nounwind" [hls_macc.c:15]   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "store i32 %tmp_2, i32* @acc_reg, align 4" [hls_macc.c:13]
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "ret void" [hls_macc.c:16]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 1ns
+The critical path consists of the following:
+	s_axi read on port 'accum_clr' [11]  (1 ns)
+
+ <State 2>: 3.17ns
+The critical path consists of the following:
+	'mul' operation ('tmp_1', hls_macc.c:14) [21]  (3.17 ns)
+
+ <State 3>: 1.88ns
+The critical path consists of the following:
+	'load' operation ('acc_reg_load', hls_macc.c:14) on static variable 'acc_reg' [19]  (0 ns)
+	'select' operation ('p_acc_reg_load', hls_macc.c:12) [20]  (0 ns)
+	'add' operation ('tmp_2', hls_macc.c:14) [22]  (0.88 ns)
+	s_axi write on port 'accum' (hls_macc.c:15) [23]  (1 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
