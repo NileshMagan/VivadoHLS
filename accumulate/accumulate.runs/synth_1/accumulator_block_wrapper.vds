@@ -2,8 +2,8 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Tue Jun 26 21:52:07 2018
-# Process ID: 19000
+# Start of session at: Thu Jun 28 11:20:24 2018
+# Process ID: 15452
 # Current directory: C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1
 # Command line: vivado.exe -log accumulator_block_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source accumulator_block_wrapper.tcl
 # Log file: C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/accumulator_block_wrapper.vds
@@ -13,31 +13,31 @@ source accumulator_block_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/niles/Documents/VivadoProjects/accumulate/hls_macc/vhls_prj/solution1/impl/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
-add_files: Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 577.973 ; gain = 277.391
+add_files: Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 578.117 ; gain = 277.699
 Command: synth_design -top accumulator_block_wrapper -part xcvu9p-flga2104-2L-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17464 
+INFO: Helper process launched with PID 14728 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 577.973 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 578.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'accumulator_block_wrapper' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/hdl/accumulator_block_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'accumulator_block' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:13]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_axi_uart16550_0_0' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_axi_uart16550_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_axi_uart16550_0_0' (1#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_axi_uart16550_0_0' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_axi_uart16550_0_0' (1#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_axi_uart16550_0_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'axi_uart16550_0' of module 'accumulator_block_axi_uart16550_0_0' requires 35 connections, but only 27 given [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:147]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_clk_wiz_1_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_clk_wiz_1_3_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_clk_wiz_1_3' (2#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_clk_wiz_1_3_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_hls_macc_0_2' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_hls_macc_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_hls_macc_0_2' (3#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_hls_macc_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_mdm_1_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_mdm_1_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_mdm_1_3' (4#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_mdm_1_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_microblaze_0_1' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_microblaze_0_1' (5#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_microblaze_0_axi_intc_1' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_axi_intc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_microblaze_0_axi_intc_1' (6#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_axi_intc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_clk_wiz_1_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_clk_wiz_1_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_clk_wiz_1_3' (2#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_clk_wiz_1_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_hls_macc_0_2' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_hls_macc_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_hls_macc_0_2' (3#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_hls_macc_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_mdm_1_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_mdm_1_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_mdm_1_3' (4#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_mdm_1_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_microblaze_0_1' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_microblaze_0_1' (5#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_microblaze_0_axi_intc_1' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_axi_intc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_microblaze_0_axi_intc_1' (6#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_axi_intc_1_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'accumulator_block_microblaze_0_axi_periph_2' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:439]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_JDPF6Z' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:1325]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_JDPF6Z' (7#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:1325]
@@ -51,30 +51,30 @@ INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_14JMZPW' [C:/Users/ni
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_14JMZPW' (11#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:2101]
 INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_9CONFB' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:2247]
 INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_9CONFB' (12#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:2247]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_xbar_1' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_xbar_1' (13#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_xbar_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_xbar_1' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_xbar_1' (13#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_xbar_1_stub.v:6]
 WARNING: [Synth 8-350] instance 'xbar' of module 'accumulator_block_xbar_1' requires 40 connections, but only 38 given [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:1284]
 INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_microblaze_0_axi_periph_2' (14#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:439]
 WARNING: [Synth 8-350] instance 'microblaze_0_axi_periph' of module 'accumulator_block_microblaze_0_axi_periph_2' requires 122 connections, but only 106 given [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:294]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1OM7QFG' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:1721]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_dlmb_bram_if_cntlr_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_dlmb_bram_if_cntlr_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_dlmb_bram_if_cntlr_3' (15#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_dlmb_bram_if_cntlr_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_dlmb_v10_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_dlmb_v10_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_dlmb_v10_3' (16#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_dlmb_v10_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_dlmb_bram_if_cntlr_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_dlmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_dlmb_bram_if_cntlr_3' (15#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_dlmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_dlmb_v10_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_dlmb_v10_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_dlmb_v10_3' (16#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_dlmb_v10_3_stub.v:6]
 WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'accumulator_block_dlmb_v10_3' requires 25 connections, but only 24 given [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:1867]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_ilmb_bram_if_cntlr_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_ilmb_bram_if_cntlr_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_ilmb_bram_if_cntlr_3' (17#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_ilmb_bram_if_cntlr_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_ilmb_v10_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_ilmb_v10_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_ilmb_v10_3' (18#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_ilmb_v10_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_ilmb_bram_if_cntlr_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_ilmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_ilmb_bram_if_cntlr_3' (17#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_ilmb_bram_if_cntlr_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_ilmb_v10_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_ilmb_v10_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_ilmb_v10_3' (18#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_ilmb_v10_3_stub.v:6]
 WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'accumulator_block_ilmb_v10_3' requires 25 connections, but only 24 given [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:1913]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_lmb_bram_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_lmb_bram_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_lmb_bram_3' (19#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_lmb_bram_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_lmb_bram_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_lmb_bram_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_lmb_bram_3' (19#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_lmb_bram_3_stub.v:6]
 WARNING: [Synth 8-350] instance 'lmb_bram' of module 'accumulator_block_lmb_bram_3' requires 16 connections, but only 14 given [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:1938]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1OM7QFG' (20#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:1721]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_microblaze_0_xlconcat_1' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_xlconcat_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_microblaze_0_xlconcat_1' (21#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_xlconcat_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'accumulator_block_rst_clk_wiz_1_100M_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_rst_clk_wiz_1_100M_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_rst_clk_wiz_1_100M_3' (22#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-19000-DESKTOP-NNR7SS1/realtime/accumulator_block_rst_clk_wiz_1_100M_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_microblaze_0_xlconcat_1' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_xlconcat_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_microblaze_0_xlconcat_1' (21#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_microblaze_0_xlconcat_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accumulator_block_rst_clk_wiz_1_100M_3' [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_rst_clk_wiz_1_100M_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_rst_clk_wiz_1_100M_3' (22#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/.Xil/Vivado-15452-DESKTOP-NNR7SS1/realtime/accumulator_block_rst_clk_wiz_1_100M_3_stub.v:6]
 WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'accumulator_block_rst_clk_wiz_1_100M_3' requires 10 connections, but only 9 given [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:427]
 INFO: [Synth 8-6155] done synthesizing module 'accumulator_block' (23#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/synth/accumulator_block.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'accumulator_block_wrapper' (24#1) [C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.srcs/sources_1/bd/accumulator_block/hdl/accumulator_block_wrapper.v:12]
@@ -103,7 +103,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_JDPF6Z has unconnected port M_AR
 WARNING: [Synth 8-3331] design m00_couplers_imp_JDPF6Z has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_JDPF6Z has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 577.973 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 578.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -116,10 +116,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 577.973 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 578.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 577.973 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 578.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xcvu9p-flga2104-2L-e
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -161,17 +161,17 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1560.313 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1561.277 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'accumulator_block_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1560.313 ; gain = 982.340
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 1561.277 ; gain = 983.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xcvu9p-flga2104-2L-e
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1560.313 ; gain = 982.340
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 1561.277 ; gain = 983.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -197,10 +197,10 @@ Applied set_property DONT_TOUCH = true for accumulator_block_i/microblaze_0_loca
 Applied set_property DONT_TOUCH = true for accumulator_block_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for accumulator_block_i/axi_uart16550_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1560.313 ; gain = 982.340
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 1561.277 ; gain = 983.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:01:24 . Memory (MB): peak = 1560.313 ; gain = 982.340
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:50 . Memory (MB): peak = 1561.277 ; gain = 983.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -248,7 +248,7 @@ WARNING: [Synth 8-3331] design accumulator_block_microblaze_0_axi_periph_2 has u
 WARNING: [Synth 8-3331] design accumulator_block_microblaze_0_axi_periph_2 has unconnected port S02_ACLK
 WARNING: [Synth 8-3331] design accumulator_block_microblaze_0_axi_periph_2 has unconnected port S02_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:25 . Memory (MB): peak = 1560.313 ; gain = 982.340
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1561.277 ; gain = 983.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -266,13 +266,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'accumulator_block_i/micro
 INFO: [Synth 8-5578] Moved timing constraint from pin 'accumulator_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'accumulator_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
 INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:59 . Memory (MB): peak = 2022.016 ; gain = 1444.043
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:43 . Memory (MB): peak = 2021.000 ; gain = 1442.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:59 . Memory (MB): peak = 2022.293 ; gain = 1444.320
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:43 . Memory (MB): peak = 2021.277 ; gain = 1443.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -284,7 +284,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:59 . Memory (MB): peak = 2023.328 ; gain = 1445.355
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:43 . Memory (MB): peak = 2022.566 ; gain = 1444.449
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -308,7 +308,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:02:01 . Memory (MB): peak = 2023.703 ; gain = 1445.730
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:45 . Memory (MB): peak = 2022.941 ; gain = 1444.824
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -321,7 +321,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:02:01 . Memory (MB): peak = 2023.703 ; gain = 1445.730
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:45 . Memory (MB): peak = 2022.941 ; gain = 1444.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -333,25 +333,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:02:01 . Memory (MB): peak = 2023.703 ; gain = 1445.730
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:45 . Memory (MB): peak = 2022.941 ; gain = 1444.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:02:01 . Memory (MB): peak = 2023.703 ; gain = 1445.730
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:45 . Memory (MB): peak = 2022.941 ; gain = 1444.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:02:01 . Memory (MB): peak = 2023.703 ; gain = 1445.730
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:45 . Memory (MB): peak = 2022.941 ; gain = 1444.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:02:01 . Memory (MB): peak = 2023.703 ; gain = 1445.730
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:45 . Memory (MB): peak = 2022.941 ; gain = 1444.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -409,11 +409,11 @@ Report Instance Areas:
 |4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1OM7QFG       |   496|
 +------+------------------------------+--------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:02:01 . Memory (MB): peak = 2023.703 ; gain = 1445.730
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:45 . Memory (MB): peak = 2022.941 ; gain = 1444.824
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:57 . Memory (MB): peak = 2023.707 ; gain = 463.395
-Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:02:01 . Memory (MB): peak = 2023.707 ; gain = 1445.734
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:18 . Memory (MB): peak = 2022.941 ; gain = 461.664
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:45 . Memory (MB): peak = 2022.941 ; gain = 1444.824
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -426,8 +426,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 68 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:02:47 . Memory (MB): peak = 2116.766 ; gain = 1538.793
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:55 . Memory (MB): peak = 2105.934 ; gain = 1527.816
 INFO: [Common 17-1381] The checkpoint 'C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/synth_1/accumulator_block_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file accumulator_block_wrapper_utilization_synth.rpt -pb accumulator_block_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2117.020 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 26 21:55:37 2018...
+report_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2106.195 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 28 11:22:58 2018...

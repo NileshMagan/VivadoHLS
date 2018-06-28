@@ -2,8 +2,8 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Tue Jun 26 21:55:46 2018
-# Process ID: 8244
+# Start of session at: Thu Jun 28 11:23:13 2018
+# Process ID: 19664
 # Current directory: C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/impl_1
 # Command line: vivado.exe -log accumulator_block_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source accumulator_block_wrapper.tcl -notrace
 # Log file: C:/Users/niles/Documents/VivadoProjects/accumulate/accumulate/accumulate.runs/impl_1/accumulator_block_wrapper.vdi

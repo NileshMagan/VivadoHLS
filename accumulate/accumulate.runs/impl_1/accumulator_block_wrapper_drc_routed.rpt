@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Tue Jun 26 22:12:39 2018
+| Date         : Thu Jun 28 11:44:46 2018
 | Host         : DESKTOP-NNR7SS1 running 64-bit major release  (build 9200)
 | Command      : report_drc -file accumulator_block_wrapper_drc_routed.rpt -pb accumulator_block_wrapper_drc_routed.pb -rpx accumulator_block_wrapper_drc_routed.rpx
 | Design       : accumulator_block_wrapper
@@ -24,15 +24,14 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 6
+             Violations found: 4
              Violations waived: 11
-+-----------+----------+--------------------------------------------+------------+
-| Rule      | Severity | Description                                | Violations |
-+-----------+----------+--------------------------------------------+------------+
-| DPOP-3    | Warning  | PREG Output pipelining                     | 1          |
-| DPOP-4    | Warning  | MREG Output pipelining                     | 3          |
-| REQP-1774 | Warning  | RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32 | 2          |
-+-----------+----------+--------------------------------------------+------------+
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPOP-3 | Warning  | PREG Output pipelining | 1          |
+| DPOP-4 | Warning  | MREG Output pipelining | 3          |
++--------+----------+------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -54,16 +53,6 @@ Related violations: <none>
 DPOP-4#3 Warning
 MREG Output pipelining  
 DSP accumulator_block_i/hls_macc_0/inst/tmp_1_reg_99_reg__0 multiplier stage accumulator_block_i/hls_macc_0/inst/tmp_1_reg_99_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-REQP-1774#1 Warning
-RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
-The RAMB36E2 cell accumulator_block_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
-Related violations: <none>
-
-REQP-1774#2 Warning
-RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
-The RAMB36E2 cell accumulator_block_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
 Related violations: <none>
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="accumulator_block_hls_macc_0_2_synth_1" LaunchPart="xcvu9p-flga2104-2L-e" LaunchTime="1529981616">
+<GenRun Id="accumulator_block_hls_macc_0_2_synth_1" LaunchPart="xcvu9p-flga2104-2L-e" LaunchTime="1530077750">
   <File Type="PA-TCL" Name="accumulator_block_hls_macc_0_2.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="accumulator_block_hls_macc_0_2_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="accumulator_block_hls_macc_0_2_reports.tcl"/>

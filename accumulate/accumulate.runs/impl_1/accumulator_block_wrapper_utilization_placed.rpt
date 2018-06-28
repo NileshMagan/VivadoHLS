@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Tue Jun 26 22:05:22 2018
+| Date         : Thu Jun 28 11:34:15 2018
 | Host         : DESKTOP-NNR7SS1 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file accumulator_block_wrapper_utilization_placed.rpt -pb accumulator_block_wrapper_utilization_placed.pb
 | Design       : accumulator_block_wrapper
@@ -36,8 +36,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| CLB LUTs                   | 3004 |     0 |   1182240 |  0.25 |
-|   LUT as Logic             | 2810 |     0 |   1182240 |  0.24 |
+| CLB LUTs                   | 3002 |     0 |   1182240 |  0.25 |
+|   LUT as Logic             | 2808 |     0 |   1182240 |  0.24 |
 |   LUT as Memory            |  194 |     0 |    591840 |  0.03 |
 |     LUT as Distributed RAM |   96 |     0 |           |       |
 |     LUT as Shift Register  |   98 |     0 |           |       |
@@ -77,13 +77,13 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| CLB                                       |  561 |     0 |    147780 |  0.38 |
+| CLB                                       |  580 |     0 |    147780 |  0.39 |
 |   CLBL                                    |  266 |     0 |           |       |
-|   CLBM                                    |  295 |     0 |           |       |
-| LUT as Logic                              | 2810 |     0 |   1182240 |  0.24 |
-|   using O5 output only                    |   64 |       |           |       |
-|   using O6 output only                    | 2172 |       |           |       |
-|   using O5 and O6                         |  574 |       |           |       |
+|   CLBM                                    |  314 |     0 |           |       |
+| LUT as Logic                              | 2808 |     0 |   1182240 |  0.24 |
+|   using O5 output only                    |   69 |       |           |       |
+|   using O6 output only                    | 2163 |       |           |       |
+|   using O5 and O6                         |  576 |       |           |       |
 | LUT as Memory                             |  194 |     0 |    591840 |  0.03 |
 |   LUT as Distributed RAM                  |   96 |     0 |           |       |
 |     using O5 output only                  |    0 |       |           |       |
@@ -93,10 +93,10 @@ Table of Contents
 |     using O5 output only                  |    0 |       |           |       |
 |     using O6 output only                  |   64 |       |           |       |
 |     using O5 and O6                       |   34 |       |           |       |
-| LUT Flip Flop Pairs                       | 1301 |     0 |   1182240 |  0.11 |
-|   fully used LUT-FF pairs                 |  241 |       |           |       |
-|   LUT-FF pairs with one unused LUT output |  982 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  |  871 |       |           |       |
+| LUT Flip Flop Pairs                       | 1279 |     0 |   1182240 |  0.11 |
+|   fully used LUT-FF pairs                 |  237 |       |           |       |
+|   LUT-FF pairs with one unused LUT output |  964 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  |  899 |       |           |       |
 | Unique Control Sets                       |  150 |       |           |       |
 +-------------------------------------------+------+-------+-----------+-------+
 * Note: Review the Control Sets Report for more information regarding control sets.
@@ -108,9 +108,9 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Fixed | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |    2 |     0 |      2160 |  0.09 |
-|   RAMB36/FIFO*    |    2 |     0 |      2160 |  0.09 |
-|     RAMB36E2 only |    2 |       |           |       |
+| Block RAM Tile    |   32 |     0 |      2160 |  1.48 |
+|   RAMB36/FIFO*    |   32 |     0 |      2160 |  1.48 |
+|     RAMB36E2 only |   32 |       |           |       |
 |   RAMB18          |    0 |     0 |      4320 |  0.00 |
 | URAM              |    0 |     0 |       960 |  0.00 |
 +-------------------+------+-------+-----------+-------+
@@ -229,12 +229,12 @@ Table of Contents
 | MUXF7      |  121 |                 CLB |
 | CARRY8     |   67 |                 CLB |
 | RAMS32     |   32 |                 CLB |
+| RAMB36E2   |   32 |           Block Ram |
 | LUT1       |   20 |                 CLB |
 | DSP48E2    |    8 |          Arithmetic |
 | SRLC16E    |    7 |                 CLB |
 | FDPE       |    6 |            Register |
 | IBUFCTRL   |    3 |              Others |
-| RAMB36E2   |    2 |           Block Ram |
 | INBUF      |    2 |                 I/O |
 | BUFGCE     |    2 |               Clock |
 | SRLC32E    |    1 |                 CLB |
@@ -312,10 +312,10 @@ Table of Contents
 | SLR Index | CLBs | (%)CLBs | Total LUTs | Memory LUTs | (%)Total LUTs | Registers | BRAMs | URAM | DSPs |
 +-----------+------+---------+------------+-------------+---------------+-----------+-------+------+------+
 | SLR2      |    0 |    0.00 |          0 |           0 |          0.00 |         0 |     0 |    0 |    0 |
-| SLR1      |  561 |    1.14 |       3004 |         194 |          0.76 |      2664 |     2 |    0 |    8 |
+| SLR1      |  580 |    1.18 |       3002 |         194 |          0.76 |      2664 |    32 |    0 |    8 |
 | SLR0      |    0 |    0.00 |          0 |           0 |          0.00 |         0 |     0 |    0 |    0 |
 +-----------+------+---------+------------+-------------+---------------+-----------+-------+------+------+
-| Total     |  561 |         |       3004 |         194 |               |      2664 |     2 |    0 |    8 |
+| Total     |  580 |         |       3002 |         194 |               |      2664 |    32 |    0 |    8 |
 +-----------+------+---------+------------+-------------+---------------+-----------+-------+------+------+
 
 
